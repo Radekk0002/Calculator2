@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body,html{
+	background-color: #29304B;
+}
+
+
+#container {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  padding: 1rem;
+  background-color: #b3b3b3;
+  border-radius: 5px;
+}
+
+#resultContainer {
+  width: 100%;
+  height: 2.8rem;
+  background-color: #6f6f6f;
+}
+
+#result {
+  max-width: 99.9%;
+  float: right;
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0.5rem 0.2rem;
+  text-align: right;
+  font-size: 20px;
+  border: 1px solid black;
+  caret-color: transparent;
+}
+
+#buttonsContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 25%;
+  min-height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: unset;
+}

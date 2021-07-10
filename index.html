@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="resultContainer">
+      <input type="text" id="result" value="" onkeydown="return false"></input>
+    </div>
+    <div id="buttonsContainer">
+      <button onclick="InputBracketO('(')">(</button>
+      <button onclick="InputBracketC(')')">)</button>
+      <button onclick="Back()">&larr;</button>
+      <button onclick="Input('/')">&divide;</button>
+      <button onclick="InputNumber('7')">7</button>
+      <button onclick="InputNumber('8')">8</button>
+      <button onclick="InputNumber('9')">9</button>
+      <button onclick="Input('*')">&times;</button>
+      <button onclick="InputNumber('4')">4</button>
+      <button onclick="InputNumber('5')">5</button>
+      <button onclick="InputNumber('6')">6</button>
+      <button onclick="Input('-')">-</button>
+      <button onclick="InputNumber('1')">1</button>
+      <button onclick="InputNumber('2')">2</button>
+      <button onclick="InputNumber('3')">3</button>
+      <button onclick="Input('+')">+</button>
+      <button onclick="Clear()">C</button>
+      <button onclick="InputNumber('0')">0</button>
+      <button onclick="InputDot('.')">.</button>
+      <button onclick="Calculate()">=</button>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
